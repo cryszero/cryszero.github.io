@@ -296,5 +296,26 @@ body {
 }
 
 @media (max-width: 768px) {
-	
+	.mobile_title {
+		font-size: 40px;
+	}
+
+	.mobile_paragraph {
+		font-size: 30px;
+	}
+
+	.projects__item {
+		max-width: 50%;
+	}
+
+	.about-button {
+		font-size: 30px;
+		padding: 55px 15px;
+		border-radius: 100px;
+		top: 125px;
+	}
+
+	.aboutme {
+		top: 290px;
+	}
 }
