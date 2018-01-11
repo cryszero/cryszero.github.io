@@ -305,7 +305,7 @@ body {
 	}
 
 	.projects__item {
-		max-width: 50%;
+		max-width: 45%;
 	}
 
 	.about-button {
@@ -318,5 +318,19 @@ body {
 	.aboutme {
 		top: 290px;
 		max-width: 400px;
+	}
+
+	.projects__item:nth-child(odd) .projects__item-link:hover,
+	.projects__item:nth-child(odd) .projects__item-link:focus {
+		-webkit-transform: scale(2) translate(25%, 30%);
+    -ms-transform: scale(2) translate(25%, 30%);
+        transform: scale(2) translate(25%, 30%);
+	}
+
+	.projects__item:nth-child(even) .projects__item-link:hover,
+	.projects__item:nth-child(even) .projects__item-link:focus {
+		-webkit-transform: scale(2) translate(-25%, 30%);
+    -ms-transform: scale(2) translate(-25%, 30%);
+        transform: scale(2) translate(-25%, 30%);
 	}
 }
