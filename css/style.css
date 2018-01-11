@@ -317,5 +317,6 @@ body {
 
 	.aboutme {
 		top: 290px;
+		max-width: 400px;
 	}
 }
