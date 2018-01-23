@@ -85,6 +85,8 @@ body {
 }
 
 .header__text {
+  z-index: 2;
+
   margin-right: 10%;
   margin-left: auto;
   padding-top: 10px;
@@ -98,8 +100,7 @@ body {
   padding: 0;
 
   color: #fff;
-
-	text-shadow: 0 0 10px #000;
+  text-shadow: 0 0 10px #000;
 }
 
 .header__title {
@@ -136,17 +137,16 @@ body {
   list-style: none;
 
   -ms-flex-wrap: wrap;
-
       flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .projects__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 20%;
+  max-width: 28%;
   margin: 0;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -161,27 +161,40 @@ body {
 
 .projects__title {
   font-size: 20px;
-  line-height: 18px;
   font-weight: bold;
+  line-height: 18px;
+
   text-align: center;
 }
 
 .projects__item img {
   width: 100%;
-  height: 100%;
 }
 
-.projects__item-link:hover,
-.projects__item-link:focus {
-  -webkit-transform: scale(2.5) translate(0, 30%);
-      -ms-transform: scale(2.5) translate(0, 30%);
-          transform: scale(2.5) translate(0, 30%);
+.projects__item .projects__item-link:hover,
+.projects__item .projects__item-link:focus {
+  position: relative;
+  top: 50%;
+
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+
+.projects__item:nth-child(3n+1) .projects__item-link:hover,
+.projects__item:nth-child(3n+1) .projects__item-link:focus {
+  left: 35%;
+}
+
+.projects__item:nth-child(3n+3) .projects__item-link:hover,
+.projects__item:nth-child(3n+3) .projects__item-link:focus {
+  top: 50%;
+  left: -35%;
 }
 
 .projects__item-link {
   display: block;
 
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -192,9 +205,7 @@ body {
   left: 0;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
 
   margin: 0;
@@ -205,13 +216,11 @@ body {
   background: rgba(000, 000, 000, .9);
 
   -webkit-box-pack: center;
-
-      -ms-flex-pack: center;
-
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer__social_vk {
@@ -268,11 +277,11 @@ body {
 
 .about-button:hover,
 .about-button:focus {
-	background: #171;
+  background: #171;
 }
 
 .about-button:active {
-	background: #140;
+  background: #140;
 }
 
 .aboutme {
@@ -294,7 +303,7 @@ body {
 }
 
 .modal_visible {
-	display: block;
+  display: block;
 }
 
 .aboutme__item {
@@ -316,10 +325,19 @@ body {
     max-width: 45%;
   }
 
+  .projects__title {
+    font-size: 25px;
+    line-height: 22px;
+  }
+
   .about-button {
     font-size: 30px;
 
-    top: 125px;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
 
     padding: 55px 15px;
 
@@ -327,13 +345,20 @@ body {
   }
 
   .aboutme {
-    top: 290px;
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 10%;
+    left: auto;
 
     max-width: 900px;
   }
 
   .projects__item:nth-child(odd) .projects__item-link:hover,
   .projects__item:nth-child(odd) .projects__item-link:focus {
+    top: auto;
+    left: auto;
+
     -webkit-transform: scale(2) translate(25%, 30%);
         -ms-transform: scale(2) translate(25%, 30%);
             transform: scale(2) translate(25%, 30%);
@@ -341,6 +366,9 @@ body {
 
   .projects__item:nth-child(even) .projects__item-link:hover,
   .projects__item:nth-child(even) .projects__item-link:focus {
+    top: auto;
+    left: auto;
+
     -webkit-transform: scale(2) translate(-25%, 30%);
         -ms-transform: scale(2) translate(-25%, 30%);
             transform: scale(2) translate(-25%, 30%);
