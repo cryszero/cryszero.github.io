@@ -188,7 +188,6 @@ body {
 
 .projects__item:nth-child(3n+3) .projects__item-link:hover,
 .projects__item:nth-child(3n+3) .projects__item-link:focus {
-  top: 50%;
   left: -35%;
 }
 
@@ -197,6 +196,7 @@ body {
 
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .footer {
