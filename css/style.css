@@ -309,6 +309,7 @@ li:nth-child(5) {
     display: block; }
 
 .portfolio__frame img {
+  max-width: 100%;
   max-height: 800px; }
 
 .portfolio__frame-text {
