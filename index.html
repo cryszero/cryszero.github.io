@@ -6,70 +6,111 @@
     <meta name="viewport" content="width=device-width">
     <title>main page</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
-        <h1 class="page-header__title">Привет, меня зовут Алексей Первов и я <br><span>Front End Developer</span><br>занимаюсь фронтендом</h1>
+        <h1 class="page-header__title">Привет, меня зовут Алексей Первов и я <br><span>Front End Developer</span></h1>
     </header>
     <main>
         <div class="page-navbar">
-        <nav class="page-navbar__navigation">
-            <div class="container">
-                <div class="page-navbar__name">
-                    <h2 class="page-navbar__title">Алексей Первов<br></h2>
-                    <button class="page-navbar__button">Show Menu</button>
+            <nav class="page-navbar__navigation">
+                <div class="container">
+                    <div class="page-navbar__name">
+                        <h2 class="page-navbar__title">Алексей Первов<br></h2>
+                        <button class="page-navbar__button" title="Открыть меню"></button>
+                    </div>
+                    <ul class="page-navbar__list">
+                        <li class="page-navbar__item"><a href="#about" class="page-navbar__link">Обо мне</a></li>
+                        <li class="page-navbar__item"><a href="#portfolio" class="page-navbar__link">Портфолио</a></li>
+                        <li class="page-navbar__item"><a href="#skills" class="page-navbar__link">Навыки</a></li>
+                        <li class="page-navbar__item  visually-hidden"><a href="#resume" class="page-navbar__link">Резюме</a></li>
+                        <li class="page-navbar__item"><a href="#contacts" class="page-navbar__link">Контакты</a></li>
+                    </ul>
                 </div>
-                <ul class="page-navbar__list">
-                    <li class="page-navbar__item"><a href="#about" class="page-navbar__link">Обо мне</a></li>
-                    <li class="page-navbar__item"><a href="#portfolio" class="page-navbar__link">Портфолио</a></li>
-                    <li class="page-navbar__item"><a href="#skills" class="page-navbar__link">Навыки</a></li>
-                    <li class="page-navbar__item"><a href="#resume" class="page-navbar__link">Резюме</a></li>
-                    <li class="page-navbar__item"><a href="#contacts" class="page-navbar__link">Контакты</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
         <section class="about" id="about">
             <div class="container">
                 <h2 class="about__title">Обо мне</h2>
                 <img class="about__photo" src="img/animal-cat.png" alt="Моя фотография">
-                <p class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p>
+                <p class="about__text">Мне 25 лет, живу в Челябинске и, в последнее время, начал увлекаться HTML вёрсткой. Я прошёл интенсив htmlacademy "Базовый HTML и CSS" на 100% с проектом Седона (можно посмотреть ниже) и теперь изучаю разные интересные технологии. Очень хочу влиться в сферу фронтенда и делать качественные и красивые сайты, так что, если у вас есть ко мне предложения, обращайтесь!</p>
             </div>
         </section>
-        <section id="portfolio">
-            <div class="container">
-                <h2 class="portfolio__title">Портфолио</h2>
-                <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p>
-            </div>
+        <section id="portfolio" class="portfolio">
+            <h2 class="portfolio__title">Портфолио</h2>
+            <ul class="portfolio__list">
+                <li class="portfolio__item">
+                    <a href="https://cryszero.github.io/409333-sedona/" class="portfolio__link">
+                        <figure class="portfolio__frame">
+                            <img src="img/sedona-index.jpg" alt="Проект Седона">
+                            <figcaption class="portfolio__frame-text"><span>Проект Седона</span>
+                                <br>Резиновая вёрстка, по макету сделано 2 страницы: главная и страница отелей.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="portfolio__item">
+                    <a href="https://cryszero.github.io/gllacy/" class="portfolio__link">
+                        <figure class="portfolio__frame">
+                            <img src="img/gllacy-index.jpg" alt="Проект Глейси">
+                            <figcaption class="portfolio__frame-text"><span>Проект Глейси</span>
+                                <br>В разработке, по макету будет сделано 2 страницы: главная и страница 'сливочное'.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <h2 class="skills__title">Навыки</h2>
                 <ul class="skills__list">
                     <li class="skills__item">
-                        <p class="skills__name">1</p>
+                        <p class="skills__name  skills__name--strong">HTML5</p>
                     </li>
                     <li class="skills__item">
-                        <p class="skills__name">2</p>
+                        <p class="skills__name  skills__name--strong">CSS3</p>
                     </li>
                     <li class="skills__item">
-                        <p class="skills__name">3</p>
+                        <p class="skills__name">JavaScript</p>
                     </li>
                     <li class="skills__item">
-                        <p class="skills__name">4</p>
+                        <p class="skills__name">Gulp</p>
                     </li>
                     <li class="skills__item">
-                        <p class="skills__name">5</p>
+                        <p class="skills__name">React</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__name">Vue</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__name  skills__name--strong">SASS</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__name  skills__name--strong">jQuery</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__name">Photoshop</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__name  skills__name--strong">Кроссбраузерная вёрстка</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__name">Адаптивная вёрстка</p>
                     </li>
                 </ul>
+                <p class="skills__tag">* более сильные навыки сами подмигивают</p>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
-                <p class="contacts__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution.</p>
+                <h2 class="contacts__title">Связаться со мной</h2>
+                <ul class="contacts__social-list">
+                    <li class="contacts__social-item"> <a href="https://vk.com/xddx23" class="contacts__social-link  contacts__social-link--vk"></a></li>
+                    <li class="contacts__social-item"><a href="https://github.com/cryszero" class="contacts__social-link  contacts__social-link--github"></a></li>
+                    <li class="contacts__social-item"><a class="contacts__email" href="mailto:tdwarfs@gmail.com">tdwarfs@gmail.com</a></li>
+                </ul>
+               
             </div>
         </section>
     </main>
