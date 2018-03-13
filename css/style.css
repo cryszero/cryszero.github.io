@@ -318,6 +318,7 @@ li:nth-child(5) {
 
 .portfolio__frame-text {
   font-size: 17px;
+  width: 100%;
   position: absolute;
   top: 45%;
   left: 15%;
