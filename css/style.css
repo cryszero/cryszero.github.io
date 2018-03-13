@@ -222,6 +222,13 @@ li:nth-child(5) {
     .about .container {
       max-width: 1200px; } }
 
+.about__link {
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
 .about__title {
   font-size: 30px;
   line-height: 20px;
@@ -237,9 +244,6 @@ li:nth-child(5) {
     margin-top: 30px;
     content: '';
     border-bottom: 5px solid gold; }
-
-.about__photo {
-  margin-bottom: 50px; }
 
 .about__text {
   max-width: 725px;
