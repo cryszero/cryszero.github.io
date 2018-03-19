@@ -106,6 +106,7 @@ h3 {
 
 .page-navbar__button {
   position: relative;
+  outline: none;
   width: 30px;
   height: 5px;
   -webkit-transition: all .3s ease-in-out;
