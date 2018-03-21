@@ -34,7 +34,7 @@ $(document).ready(() => {
         evt.preventDefault();
         var aboutStart = $('#about').offset().top;
         var aboutEnd = aboutStart + $('#about').height();
-        posX = (Math.random() * ($('#about').width() - 103) + 103).toFixed();
+        posX = (Math.random() * ($('#about').width() - 214) + 107).toFixed();
         posY = (Math.random() * (aboutEnd - aboutStart) + aboutStart).toFixed();
         $meow = $('<div/>').text('Meow').css({
             'position': 'absolute',
