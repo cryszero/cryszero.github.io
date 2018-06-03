@@ -1,0 +1,26 @@
+.about {
+  padding: 80px 20px;
+}
+
+.about .container {
+  text-align: center;
+
+  @include container();
+}
+
+.about__link {
+	max-width: 300px;
+	max-height: 300px;
+	display: block;
+	margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.about__title {
+  @include underlined-title();
+}
+
+.about__text {
+  max-width: 725px;
+  margin: auto;
+}

@@ -1,0 +1,36 @@
+@mixin container() {
+  margin: 0 auto;
+
+  @media ($tablet-width) {
+    max-width: 768px;
+  }
+  @media ($desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+@mixin underlined-title() {
+  font-size: 30px;
+  line-height: 20px;
+
+  position: relative;
+
+  margin-bottom: 50px;
+
+  text-transform: uppercase;
+
+  &:after {
+    position: relative;
+    top: 0;
+    left: calc(50% - 45px);
+
+    display: block;
+
+    width: 90px;
+    margin-top: 30px;
+
+    content: '';
+
+    border-bottom: 5px solid gold;
+  }
+}

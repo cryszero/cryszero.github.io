@@ -1,0 +1,25 @@
+body {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(49%, #f4f5f6), to(#fff));
+  background: linear-gradient(to bottom, #fff 0%, #f4f5f6 49%, #fff 100%);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
