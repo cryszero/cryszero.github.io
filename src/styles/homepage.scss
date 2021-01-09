@@ -1,0 +1,29 @@
+.homepage {
+    &__introduction .wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__introduction .section__text {
+        margin-bottom: 48px;
+    }
+
+    &__companies .section__image {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    &__contacts .section__title,
+    &__skills .section__title {
+        text-align: center;
+    }
+
+    &__contacts .wrapper,
+    &__skills .wrapper {
+        display: block;
+    }
+
+    &__skills .section__subtitle {
+        margin-bottom: var(--standart-margin);
+    }
+}

@@ -1,0 +1,25 @@
+.experience-list {
+    &__item {
+        margin-bottom: var(--standart-margin);
+        font-size: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__position {
+        font-weight: 600;
+    }
+
+    &__position,
+    &__company,
+    &__dates {
+        display: block;
+        line-height: 28px;
+    }
+
+    &__dates {
+        opacity: 0.5;
+    }
+}

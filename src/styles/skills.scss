@@ -1,0 +1,17 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    &--smaller {
+        justify-content: flex-start;
+    }
+
+    &--smaller &__item {
+        opacity: 0.5;
+    }
+
+    &__item {
+        font-size: 18px;
+    }
+}

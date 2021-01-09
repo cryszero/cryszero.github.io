@@ -1,0 +1,39 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './section.scss';
+@import './homepage.scss';
+@import './experience-list.scss';
+@import './skills.scss';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+
+    transition: color 400ms ease-in-out;
+
+    &:visited {
+        color: var(--color-link--visited);
+    }
+}
+
+.wrapper {
+    max-width: 1280px;
+    padding: 0 var(--standart-margin);
+}
