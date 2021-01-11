@@ -30,6 +30,7 @@
     }
     
     &__image {
+        width: 100%;
         max-width: 300px;
         max-height: 300px;
 
@@ -39,6 +40,7 @@
             left: -100%;
 
             display: block;
+            width: auto;
             max-width: none;
             max-height: 500px;
         }
