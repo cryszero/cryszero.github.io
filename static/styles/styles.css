@@ -9,15 +9,15 @@
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../static/fonts/RobotoSlab-Regular.ttf") format("opentype");
+  src: url("/static/fonts/RobotoSlab-Regular.ttf") format("opentype");
 }
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../static/fonts/RobotoSlab-Bold.ttf") format("opentype");
+  src: url("/static/fonts/RobotoSlab-Bold.ttf") format("opentype");
 }
 @font-face {
   font-family: "Roboto Slab Light";
-  src: url("../static/fonts/RobotoSlab-Light.ttf") format("opentype");
+  src: url("/static/fonts/RobotoSlab-Light.ttf") format("opentype");
 }
 .section {
   padding: 40px 0;
