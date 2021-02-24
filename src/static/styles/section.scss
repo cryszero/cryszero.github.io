@@ -67,24 +67,6 @@
     &__subtitle {
         font-size: 18px;
         font-weight: 600;
-
-        &--short {
-            display: block;
-        }
-
-        &--full {
-            display: none;
-        }
-    }
-
-    &--full &__subtitle {
-        &--short {
-            display: none;
-        }
-
-        &--full {
-            display: block;
-        }
     }
 
     &__subtitle b {
@@ -142,11 +124,11 @@
         }
 
         &--github::before {
-            background-image: url('/static/images/icons/github.png');
+            background-image: url('../images/icons/github.png');
         }
 
         &--vk::before {
-            background-image: url('/static/images/icons/vk.png');
+            background-image: url('../images/icons/vk.png');
         }
     }
 
